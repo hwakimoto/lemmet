@@ -1,6 +1,6 @@
 # What is?
 
-Lemmet is a "Indent capable" Emmet notations.
+Lemmet is a "Indent capable" Emmet like notations.
 
 # Sample
 

@@ -4,25 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Lemmet (Indent capable Emmet)</title>
+
     <link href="//stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Lemmet (Indent capable Emmet)</title>
-    <script>
-
-        function lemmet_exec() {
-            lemmet_str = document.getElementById('lemmet_text').value
-            emmet_str = lemmet2emmet(lemmet_str)
-            html_str = emmet2html(emmet_str)
-            document.getElementById('emmet_text').value = emmet_str
-            document.getElementById('html_text').value = html_str
+    <style>
+        h1 {
+            font-size:5em;
+            margin-bottom: 50px;
         }
+        h2 {
+            margin-top: 20px;
+        }
+    </style>
 
-    </script>
 </head>
 
 <body>
     <div class="container">
+        <h1>Lemmet</h1>
+        <h2>What is Lemmet?</h2>
+        <p>A "Indent capable" Emment like notations.</p>
+        <p>See <a href="https://github.com/hwakimoto/lemmet" target="_blank">https://github.com/hwakimoto/lemmet</a>
+            for more information.</p>
+        <h2>How to use?</h2>
+        <p>Copy your Lemmet code to upper field and push "EXECUTE" button. Then you can get Emmet code.</p>
+        <h2>Lemmet to Emmet converter</h2>
         <form>
             <div class="form-group">
                 <label for="lemmet_text">Lemmet</label>
@@ -35,7 +44,7 @@ div#page
             </div>
             <div class="form-group">
                 <label for="emmet_text">Emmet</label>
-                <textarea name="emmet_text" class="form-control" id="emmet_text" cols="30" rows="10"></textarea>
+                <textarea name="emmet_text" class="form-control" id="emmet_text" cols="30" rows="2"></textarea>
             </div>
             <button type="button" class="btn btn-primary" id="exec_button" name="exec_button" value="Lemmet to Emmet"
                 onclick="lemmet_exec();">EXECUTE</button>
@@ -45,10 +54,29 @@ div#page
         </div>
         -->
         </form>
+
+        <h2>About</h2>
+        <p>Source code: <a href="https://github.com/hwakimoto/lemmet" target="_blank">https://github.com/hwakimoto/lemmet</a></p>
+        <p>Copyright: ©2018 Hiroyuki Wakimoto </p>
+        <p>License: MIT</p>
+        <p>Contact(Mastodon): <a href="https://vocalodon.net/@tomoki" target="_blank">@tomoki@vocalodon.net</a> </p>
+        
     </div>
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js">    </script>
     <script src="//stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <script src="lemmet.js"></script>
+    <script>
+
+        function lemmet_exec() {
+            lemmet_str = document.getElementById('lemmet_text').value
+            emmet_str = lemmet2emmet(lemmet_str)
+            html_str = emmet2html(emmet_str)
+            document.getElementById('emmet_text').value = emmet_str
+            document.getElementById('html_text').value = html_str
+        }
+
+    </script>
+
 </body>
 
 </html>
