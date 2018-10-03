@@ -20,7 +20,7 @@ div#page
 
 # Usage
 
-Go to this site and paste Lemmet strings and push "EXECUTE".
+Go to this site and paste Lemmet strings and push "Convert to Emmet".
 
 http://hwakimoto.github.io/lemmet
 

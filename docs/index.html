@@ -26,16 +26,17 @@
     <div class="container">
         <h1>Lemmet</h1>
         <h2>What is Lemmet?</h2>
-        <p>A "Indent capable" Emment.</p>
-        <p></p>
+        <p>A "Indent capable" Emmet.</p>
+        <p>Emmet is written as one line. It is a little complecated.
+             And I found that expand Emmet code as multi line and use indent instead of ">" or "+" or "^".</p>
         <p>See <a href="https://github.com/hwakimoto/lemmet" target="_blank">https://github.com/hwakimoto/lemmet</a>
             for more information.</p>
         <h2>How to use?</h2>
-        <p>Copy your Lemmet code to upper field and push "EXECUTE" button. Then you can get Emmet code.</p>
+        <p>Copy your Lemmet code from your text editor and paste to Lemmet field and push "Convert to Emmet" button. Then you can get Emmet code.</p>
         <h2>Lemmet to Emmet converter</h2>
         <form>
             <div class="form-group">
-                <label for="lemmet_text">Lemmet</label>
+                <label for="lemmet_text">Lemmet (Paste here)</label>
                 <textarea name="lemmet_text" class="form-control" id="lemmet_text" cols="30" rows="10">
 div#page
   div.logo
@@ -48,7 +49,7 @@ div#page
                 <textarea name="emmet_text" class="form-control" id="emmet_text" cols="30" rows="2"></textarea>
             </div>
             <button type="button" class="btn btn-primary" id="exec_button" name="exec_button" value="Lemmet to Emmet"
-                onclick="lemmet_exec();">EXECUTE</button>
+                onclick="lemmet_exec();">Convert to Emmet</button>
             <!-- WIP
         <div id="html">
             <textarea name="html_text" id="html_text" cols="30" rows="10"></textarea>
