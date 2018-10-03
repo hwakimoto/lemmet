@@ -25,3 +25,7 @@ Go to this site and paste Lemmet strings and push "Convert to Emmet".
 http://hwakimoto.github.io/lemmet
 
 Or, You can include lemmet.js into your project and call lemmet2emmet() function to convert from Lemmet to Emmet.
+
+# In future
+
+* Extension for Visual Studio Code. (Someone help me please!)
