@@ -2,27 +2,26 @@
 
 Lemmet is a "Indent capable" Emmet like notations.
 
-# Sample
+# Example
 
-## Emmet Sample (from Wikipedia)
+## Emmet example (from Wikipedia)
 ```
 div#page>div.logo+ul#navigation>li*5>a
 ```
 
-## Lemmet Sample
+## Lemmet example
 ```
 div#page
   div.logo
   ul#navigation
     li*5>a
 ```
+* Use 2 space or TAB for indent.
 
-Lemmet is more simple and high visibility.
+# Usage
 
-# Useage
-
-Call lemmet2emmet() function to convert from Lemmet to Emmet.
-
-# Sample page
+Go to this site and paste Lemmet strings and push "EXECUTE".
 
 http://hwakimoto.github.io/lemmet
+
+Or, You can include lemmet.js into your project and call lemmet2emmet() function to convert from Lemmet to Emmet.
