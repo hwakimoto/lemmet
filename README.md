@@ -1,6 +1,6 @@
 # What is?
 
-Lemmet is a "Indent capable" Emmet like notations.
+Lemmet is a indentable Emmet.
 
 # Example
 
@@ -20,12 +20,19 @@ div#page
 
 # Usage
 
+## Web converter
 Go to this site and paste Lemmet strings and push "Convert to Emmet".
 
 http://hwakimoto.github.io/lemmet
 
-Or, You can include lemmet.js into your project and call lemmet2emmet() function to convert from Lemmet to Emmet.
+## Extension for Visual Studio Code. 
 
-# In future
+Clone or download source code and copy vscode-extension folder into your .vscode/extensions directory.
 
-* Extension for Visual Studio Code. (Someone help me please!)
+You can not find using Marketplace currently.
+
+## Other
+
+Or, You can include lemmet.js or lemmet.ext.js into your project and call lemmet2emmet() function to convert from Lemmet to Emmet.
+
+
