@@ -16,7 +16,7 @@ div#page
   ul#navigation
     li*5>a
 ```
-* Use 2 space or TAB for indent.
+* Use 2 space or TAB (also accept single "ZENKAKU" space) for indent.
 
 # Usage
 

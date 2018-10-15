@@ -13,7 +13,7 @@ function lemmet2emmet(str) {
     if (reg!=null) {
         last_indent_count = reg.length
     }
-    let emmetstr = strArray[0].replace(/\t+/g,"")
+    let emmetstr = strArray[0].replace(/\t+/g,"  ")
     for (let i = 1; i < strArray.length; i++) {
         if (strArray[i].trim() == "") {
             break;
@@ -44,15 +44,3 @@ function lemmet2emmet(str) {
     return emmetstr
 }
 
-/**
- * emmet2heml
- *
- * WIP
- *
- * Call external function?
- *
- * @param {string} str
- */
-function emmet2html(str) {
-    return str;
-}
